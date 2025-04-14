@@ -1,0 +1,1 @@
+gcc -g -Wall -DDEBUG -fdiagnostics-color=always -o "bin/memoria_tests.out" tests/dictionary_implementation.c tests/user_mem/user_mem_tests.c obj/comunicacion/iniciar_servidor_memoria.o obj/globals/globals.o obj/user_mem/user_mem.o obj/t_config/t_config.o -I../utils/src -I./src -L../utils/bin  -lutils -lcommons -lpthread -lreadline -lm -lcspecs

@@ -1,0 +1,103 @@
+{
+	"settings": {
+		"launches": {
+			"memoria": "run (memoria)",
+			"cpu": "run (cpu)",
+			"kernel": "run (kernel)",
+			"io": "run (entradasalida)",
+		},
+		"debug.onTaskErrors": "abort",
+		"files.associations": {
+			"*.h": "c",
+		},
+		"C_Cpp.autoAddFileAssociations": false,
+		"editor.formatOnSave": true, // keep all code with same formatting always
+		"C_Cpp.clang_format_style": "microsoft",
+		"C_Cpp.errorSquiggles": "disabled", // show us errors in the code
+		"C_Cpp.codeAnalysis.clangTidy.enabled": true, // enable clang-tidy (a static code analyzer) that help us find potential errors
+		"C_Cpp.codeAnalysis.runAutomatically": true, // clang-tidy will run upon opening or saving a file
+		"C_Cpp.codeAnalysis.clangTidy.checks.disabled": [ // rules that we don't want to take into account
+			"clang-analyzer-security.insecureAPI.DeprecatedOrUnsafeBufferHandling", // avoid using memcopy
+			"misc-include-cleaner", // NULL and other newly standard doesn't need to be included
+			"misc-no-recursion" // No soy fan de la recursión pero es una herramienta que sí podemos usar
+		],
+		"C_Cpp.codeAnalysis.clangTidy.checks.enabled": [
+			"misc-*",
+			"bugprone-*",
+			"cert-*",
+			"concurrency-*",
+			"clang-analyzer-*",
+			"darwin-*",
+			"fuchsia-*",
+			"google-*",
+			"linuxkernel-must-use-errs",
+			"performance-*",
+			"readability-*",
+		],
+		//
+		// this is a lame workaround to see root folder and edit readme or gitignore
+		// see: https://github.com/microsoft/vscode/issues/45177 (issue not addressed since 2018)
+		"files.exclude": {
+			"kernel": true,
+			"cpu": true,
+			"memoria": true,
+			"entradasalida": true,
+			"utils": true,
+			"mockup-cpu": true,
+			"mockup-entradasalida": true,
+		},
+		"launches": {
+			"memoria": "run (memoria)",
+			"cpu": "run (cpu)",
+			"kernel": "run (kernel)",
+			"io": "run (entradasalida)",
+		}
+	},
+	"folders": [
+		{
+			"path": "kernel"
+		},
+		{
+			"path": "cpu"
+		},
+		{
+			"path": "memoria"
+		},
+		{
+			"path": "entradasalida"
+		},
+		{
+			"path": "utils"
+		},
+		{
+			"path": "mockup-cpu"
+		},
+		{
+			"path": "mockup-entradasalida"
+		},
+		{
+			"name": "Testing Memoria",
+			"path": "memoria/tests"
+		},
+		{
+			"name": "Testing CPU",
+			"path": "cpu/tests"
+		},
+		{
+			"name": "Testing Kernel",
+			"path": "kernel/tests"
+		},
+		{
+			"name": "Testing IO",
+			"path": "entradasalida/tests"
+		},
+		{
+			"name": "Testing utils",
+			"path": "utils/tests"
+		},
+		{
+			"path": "./",
+			"name": "TP"
+		}
+	]
+}

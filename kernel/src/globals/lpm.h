@@ -1,0 +1,9 @@
+#include "comunicacion_cpu/comunicacion_cpu.h"
+#include "comunicacion_entradasalida/iniciar_comunicacion.h"
+#include "comunicacion_memoria/iniciar_comunicacion.h"
+#include "consola/consola.h"
+#include "gestor_recursos/gestor_recursos_share.h"
+#include "handlers/colas_estados/colas_handler.h"
+#include "semaforos_planificadores/semaforos_planificadores.h"
+#include <signal.h>
+#include <stdlib.h>

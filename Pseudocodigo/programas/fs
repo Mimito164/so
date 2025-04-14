@@ -1,0 +1,9 @@
+SET ECX 3
+IO_FS_CREATE discoblando notas.txt
+IO_FS_CREATE discoblando n4sh3.txt
+IO_FS_TRUNCATE discoblando notas.txt ECX
+IO_FS_TRUNCATE discoblando n4sh3.txt ECX
+SET ECX 1
+IO_FS_TRUNCATE discoblando n4sh3.txt ECX
+IO_FS_DELETE discoblando n4sh3.txt
+EXIT

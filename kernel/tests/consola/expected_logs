@@ -1,0 +1,12 @@
+[ERROR] 22:22:04:333 modulo kernel/(52744:52745): La cantidad argumentos es distinta a la esperada.
+[ERROR] 22:22:04:404 modulo kernel/(52744:52745): el path indicado no es correcto
+[ERROR] 22:22:04:405 modulo kernel/(52744:52745): La cantidad argumentos es distinta a la esperada.
+[ERROR] 22:22:04:405 modulo kernel/(52744:52745): el path indicado no es correcto
+[ERROR] 22:22:04:406 modulo kernel/(52744:52745): La cantidad argumentos es distinta a la esperada.
+[INFO] 22:22:04:406 modulo kernel/(52744:52745): Finalizar proceso: Ponele que se ejecuto bien B)
+[INFO] 22:22:04:407 modulo kernel/(52744:52745): Detener planificador: Ponele que se ejecuto bien B)
+[INFO] 22:22:04:407 modulo kernel/(52744:52745): Iniciar planificador: Ponele que se ejecuto bien B)
+[ERROR] 22:22:04:408 modulo kernel/(52744:52745): La cantidad argumentos es distinta a la esperada.
+[INFO] 22:22:04:408 modulo kernel/(52744:52745): Multiprogramacion: Ponele que se ejecuto bien B)
+[INFO] 22:22:04:408 modulo kernel/(52744:52745): Proceso estado: Ponele que se ejecuto bien B)
+[INFO] 22:22:04:409 modulo kernel/(52744:52745): Finalizo la consola
